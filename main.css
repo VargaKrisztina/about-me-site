@@ -150,7 +150,7 @@ body {
 h1 {
   color: rgb(34, 34, 34);
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   margin-top: 5%;
   margin-bottom: 5%;
   font-weight: 700;
@@ -175,8 +175,8 @@ h2 {
 
 .arrow,
 .second-arrow {
-  width: 380.5713px;
-  height: 450px;
+  width: 400px;
+  height: 473px;
   text-align: justify;
   position: relative;
   display: inline-block;
@@ -203,6 +203,7 @@ h2 {
 
 .arrow .first-arrow-content {
   background-color: rgb(234, 234, 232);
+  line-height: 1.3;
 
 }
 
@@ -230,6 +231,8 @@ h2 {
   content: '';
   display: block;
   position: absolute;
+  /*width: 84.84px;
+  height: 450px;*/
   width: 22.2973%;
   /* 80px */
   height: 100%;
@@ -266,7 +269,7 @@ h2 {
 
 
 .arrow-lower {
-  padding: 15%;
+  padding: 5% 15% 15% 15%;
 }
 
 
