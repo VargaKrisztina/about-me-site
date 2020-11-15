@@ -184,10 +184,11 @@ h2 {
 
 .arrow {
   margin-left: 5.5%;
+  z-index: 1;
 }
 
 .second-arrow {
-  z-index: -2;
+  /*z-index: -2;*/
   left: -260px;
 }
 
@@ -255,7 +256,7 @@ h2 {
 
 .second-arrow:after {
   background-color: rgba(210, 214, 213);
-  z-index: -3;
+  z-index: -1;
 
 }
 
@@ -407,12 +408,14 @@ img:hover {
 
   .second-arrow {
     left: 0;
-    top: -392.44px;
+    /*top: -392.44px;*/
+    top:-370px; /* fix for link overlap issue */
   }
 
   .arrow:after,
   .second-arrow:after {
     transform: matrix(0.5, -0.3633, 1.3764, 1, 0, 0);
+    /*transform: none;*/
     height: 22.2973%;
     width: 100%;
     bottom: 0;
