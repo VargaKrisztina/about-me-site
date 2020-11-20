@@ -136,7 +136,7 @@ table {
 }
 
 body {
-  background: url('image4_small.jpg') no-repeat center center fixed;
+  background: url('images/image4_small.jpg') no-repeat center center fixed;
   background-size: cover;
 
   font-family: "montserrat", 'Crimson Text', serif;
@@ -376,7 +376,7 @@ img:hover {
 
   body {
 
-    background: url('background_8.png') no-repeat center center fixed;
+    background: url('images/background_8.png') no-repeat center center fixed;
     background-size: cover;
   }
 
@@ -535,7 +535,7 @@ img:hover {
 @media only screen and (max-width: 480px) {
   body {
 
-    background: url('background_8.png') no-repeat center center fixed;
+    background: url('images/background_8.png') no-repeat center center fixed;
     background-size: cover;
   }
 
