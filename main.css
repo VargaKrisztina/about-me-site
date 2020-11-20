@@ -212,7 +212,7 @@ h2 {
 }
 
 .second-arrow .second-arrow-content {
-  background-color: rgba(210, 214, 213);
+  background-color: rgb(210, 214, 213);
   padding: 8% 35% 8% 8%;
   position: relative;
 
@@ -244,7 +244,7 @@ h2 {
   /*border: 1px solid blue; */
   transform: matrix(1, 2.6515, -0.1885, 0.5, 0, 0);
   transform-origin: top left;
-  box-shadow: 5px 0px 30px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 0px 30px -1px rgb(0, 0, 0, 0.5);
   right: 0;
   top: 0;
 }
@@ -255,7 +255,7 @@ h2 {
 }
 
 .second-arrow:after {
-  background-color: rgba(210, 214, 213);
+  background-color: rgb(210, 214, 213);
   z-index: -1;
 
 }
@@ -370,27 +370,31 @@ img:hover {
   right: 6%;
 }
 
+/*TABLET VERSION*/
 
+@media (max-width: 890px) {
 
-
-
-/*MOBILE VERSION*/
-
-
-@media only screen and (max-width: 890px) {
   body {
 
     background: url('background_8.png') no-repeat center center fixed;
     background-size: cover;
   }
 
+
   .main {
     margin-top: 30px;
     flex-direction: column;
   }
-  h1{
+
+  h1 {
     margin-bottom: 10%;
+    font-size: 1.5rem;
   }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
 
   .arrow,
   .second-arrow {
@@ -399,7 +403,7 @@ img:hover {
     text-align: justify;
     position: relative;
     display: inline-block;
-    
+
   }
 
   .arrow {
@@ -409,7 +413,8 @@ img:hover {
   .second-arrow {
     left: 0;
     /*top: -392.44px;*/
-    top:-370px; /* fix for link overlap issue */
+    top: -370px;
+    /* fix for link overlap issue */
   }
 
   .arrow:after,
@@ -430,6 +435,7 @@ img:hover {
     /* 320px */
     height: 77.7027%;
     /* 300px */
+    font-size: 1.05rem;
   }
 
   .nested-border {
@@ -480,11 +486,11 @@ img:hover {
   }
 
   .arrow-upper {
-    padding: 5%;
+    padding: 9%;
   }
 
   .arrow-lower {
-    padding: 8%;
+    padding: 9%;
   }
 
   .linkA,
@@ -495,6 +501,164 @@ img:hover {
     bottom: auto;
     left: auto;
     right: auto;
+    font-size: 2rem;
+  }
+
+  .linkA {
+    bottom: 0.645%;
+    left: 14%;
+  }
+
+  .linkB {
+    bottom: -14.5%;
+    left: 35%;
+  }
+
+  .linkC {
+    bottom: -14.5%;
+    right: 35%;
+  }
+
+  .linkD {
+    bottom: 2px;
+    right: 14%;
+  }
+
+
+}
+
+
+
+/*MOBILE VERSION*/
+
+
+@media only screen and (max-width: 480px) {
+  body {
+
+    background: url('background_8.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .main {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+
+  h1 {
+    margin-bottom: 8%;
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .arrow,
+  .second-arrow {
+    width: 215px;
+    height: 450px;
+    text-align: justify;
+    position: relative;
+    display: inline-block;
+
+  }
+
+  .arrow {
+    margin-left: 0;
+  }
+
+  .second-arrow {
+    left: 0;
+    /*top: -392.44px;*/
+    top: -255px;
+    /* fix for link overlap issue */
+  }
+
+  .arrow:after,
+  .second-arrow:after {
+    transform: matrix(0.5, -0.3633, 1.3764, 1, 0, 0);
+    /*transform: none;*/
+    height: 22.2973%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    top: auto;
+  }
+
+  .arrow .first-arrow-content,
+  .second-arrow .second-arrow-content {
+    width: 100%;
+    /* 320px */
+    height: 77.7027%;
+    /* 300px */
+    font-size: 0.75rem;
+  }
+
+  .nested-border {
+    position: relative;
+    left: -30%;
+    /*margin:0 15% 0 -25%;*/
+    background-color: rgb(51, 50, 48);
+    width: 110%;
+    height: 2px;
+    margin: 0%;
+
+  }
+
+  .nested-plus-sign {
+    position: absolute;
+    /*background-color: aqua;*/
+    width: 18px;
+    height: 18px;
+    left: 164px;
+    top: 170px;
+  }
+
+
+  .nested-plus-sign:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: rgb(51, 50, 48);
+    left: 47%;
+  }
+
+  .nested-plus-sign:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: rgb(51, 50, 48);
+    top: 47%;
+  }
+
+
+  .image {
+    float: left;
+    height: 100%;
+  }
+
+  .arrow-upper {
+    padding: 8%;
+  }
+
+  .arrow-lower {
+    padding: 4% 8%;
+  }
+
+  .linkA,
+  .linkB,
+  .linkC,
+  .linkD {
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    font-size: 1.5rem;
   }
 
   .linkA {
